@@ -42,7 +42,15 @@ void Bibliotheek::printBoekenlijst()
 
 Bibliotheek & Bibliotheek::operator=(const Bibliotheek & original)
 {
-	//if (this != &original) { is niet nodig? (check for self assignment)
+	/*if (this != &original)  is niet nodig? (check for self assignment)
+	{
+	delete boek;
+	boek = new Boek(titel);
+	boek->getTitel() = original.boekenlijst->getTitel;
+	
+	}
+	*/
+
 	for (Boek* boek : boekenlijst) {
 		delete boek;
 		
